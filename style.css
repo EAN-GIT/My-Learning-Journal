@@ -8,7 +8,7 @@ body{
     font-family: 'Source Sans Pro',sans-serif;
     min-height: 100vh;
     margin: 0 auto;
-    max-width: 600px;
+    /* max-width: 600px; */
 }
 
 /* .container{
@@ -21,9 +21,10 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
+    
     align-items: center;
     background-color: white;
-    padding: 0 2em;
+    padding:  1.5em;
     border: 3px solid blue;
 
 }
@@ -37,10 +38,10 @@ body{
 }
 .site-title{
     display: flex;
-    gap: 1.2em;
+    gap: 0.3em;
 }
 .site-title p{
-    font-size: 1em;
+    font-size: 1.2emem;
     font-weight: bold;
 
 }
@@ -50,6 +51,7 @@ nav a{
     color:black;
     margin-left: 2em;
     font-weight: bold;
+    font-size: 1em;
 
 }
 
@@ -72,32 +74,67 @@ nav a:hover{
     background-size: cover;
     color: white;
     background-position: center;
-    padding: 2rem;
+    padding: 2em ;
     height: 350px;
  }
 
 
- .hero-section h3{
+  h3{
     font-weight: lighter;
     font-size: 0.75em;
     margin:  0.2em 0;
  }
- .hero-section h1{
+  h1{
     font-weight:bold ;
     font-size: 2em;
     margin:  0.2em 0;
  }
 
- .hero-section p{
+  p{
     font-weight: 300;
     font-size :1em; ;
-    margin:  0.3em 0;
+    /* margin:  0.3em 0; */
  }
 
 
+/* Body Section for post page */
+
+
+.post-main{
+    background-color: #fafafa;
+    padding-top: 2.5em;
+    color: black;
+    
+}
+
+.post-main img{
+    width: 100%;
+    /* margin-left: 0; */
+}
+
+.post-text{
+
+}
+/* About section */
+
+.about-profile{
+    display: flex;
+    flex-direction: column;
+    background: rebeccapurple;
+    padding: 3em 2em;
+    justify-content: space-between;
+    gap: 32px;
+    align-items: center;
+}
+
+.about-text{
+}
+
  /* Blogs Section */
 
- 
+ .centered-text{
+    text-align: center;
+ }
 .article{
      /* display: grid;    */
     /* grid-template-columns: 1fr 1fr 1fr; */
@@ -210,13 +247,24 @@ nav a:hover{
    
  }
     .article{
-        display: flex;
-        /* grid-template-columns: repeat(3,min-max(200px,1fr)); */
-        /* flex-basis: 309px; */
-        justify-content: space-between;
-        height: 393px;
+         display: grid; 
+         /* width: calc(33.33% - 10px); */
+         /* flex-wrap: wrap; */
+        /* grid-template-columns: repeat(3,min-max(200px,1fr));/ */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap:20px ;
+       
     }
 
 
 
+    /* postpage main section */
+
+    .post-main > *:not(img){
+        margin-left: 2em;
+    }
+
+
+    
+    
  }
