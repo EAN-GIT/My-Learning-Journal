@@ -8,24 +8,17 @@ body{
     font-family: 'Source Sans Pro',sans-serif;
     min-height: 100vh;
     margin: 0 auto;
-    /* max-width: 600px; */
-}
-
-/* .container{
-    /* width: 90%; */
-    /* max-width: 900px; */
+    background-color: #fafafa;
   
-/* } */ 
-/* Header section */
+}
 
 .header{
     display: flex;
     justify-content: space-between;
-    
     align-items: center;
     background-color: white;
     padding:  1.5em;
-    border: 3px solid blue;
+    
 
 }
 
@@ -33,7 +26,7 @@ body{
     width: 1.25em;
     height: 1.25em;
     margin: auto;
-    /* margin-right: 2em ; */
+   
    
 }
 .site-title{
@@ -82,7 +75,7 @@ nav a:hover{
   h3{
     font-weight: lighter;
     font-size: 0.75em;
-    margin:  0.2em 0;
+    margin:  0.5em 0;
  }
   h1{
     font-weight:bold ;
@@ -93,7 +86,7 @@ nav a:hover{
   p{
     font-weight: 300;
     font-size :1em; ;
-    /* margin:  0.3em 0; */
+   
  }
 
 
@@ -104,31 +97,43 @@ nav a:hover{
     background-color: #fafafa;
     padding-top: 2.5em;
     color: black;
+    margin: 0 2em;
     
 }
 
 .post-main img{
     width: 100%;
-    /* margin-left: 0; */
-}
 
-.post-text{
-
+    
 }
 /* About section */
 
 .about-profile{
     display: flex;
     flex-direction: column;
-    background: rebeccapurple;
+    background-color: #fafafa;
     padding: 3em 2em;
     justify-content: space-between;
     gap: 32px;
-    align-items: center;
+    
+}
+.about-profile img{
+    width:  242px;
+    align-items: start;
 }
 
-.about-text{
+.about-text h1{
+    font-size: 2.5em;
 }
+
+.about-text p{
+font-size: 1.5em;
+}
+
+.about-sub{
+    padding: 0 2em;
+}
+
 
  /* Blogs Section */
 
@@ -136,10 +141,7 @@ nav a:hover{
     text-align: center;
  }
 .article{
-     /* display: grid;    */
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    /* border: 6px solid  black;
-    background: palevioletred; */
+   
     margin-top: 2em ;
     margin-bottom: 1em;
 }
@@ -202,7 +204,7 @@ nav a:hover{
     padding: 2.5em 0 ;
     color: white;
     text-align: center;
-    /* margin:  0; */
+   
     
     
  }
@@ -221,16 +223,12 @@ nav a:hover{
 
 
 
- @media(min-width: 850px){
+ @media(min-width: 650px){
 
-    /* .site-title p{
-        font-size: 2.2rem;
-        font-weight: lighter;
     
-    } */
      body{
         max-width: 1000px;
-        /* margin: 0 auto; */
+       
  }
  .site-title p{
     font-size: 1.25em;
@@ -248,9 +246,6 @@ nav a:hover{
  }
     .article{
          display: grid; 
-         /* width: calc(33.33% - 10px); */
-         /* flex-wrap: wrap; */
-        /* grid-template-columns: repeat(3,min-max(200px,1fr));/ */
         grid-template-columns: 1fr 1fr 1fr;
         grid-row-gap:20px ;
        
@@ -260,11 +255,32 @@ nav a:hover{
 
     /* postpage main section */
 
-    .post-main > *:not(img){
-        margin-left: 2em;
+     .post-main > *:not(img){
+        margin-left: 64px;
+        margin-right: 64px;
+    } 
+
+.post-main,h2  {
+    margin: 2em 2em;
+}
+    /* ///about section bug screen */
+
+    .about-profile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }    
+
+    .about-profile h1{
+        font-size: 1.8em;
+    }
+    .about-profile p{
+        font-size: 1em;
     }
 
-
     
+    .about-sub{
+        padding:2em 6em;
+    }
     
  }
